@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'MyApplication.dart';
+import 'statful_app.dart';
+
 //void main() {
 //  runApp (new Center(
 //    child:new Text('اهلا وسهلا',
@@ -8,7 +10,10 @@ import 'MyApplication.dart';
 
 //}
 void main() {
-  runApp(new MyApp());
+
+  runApp(new MaterialApp(
+    home:  new stfapp(),
+  ));
 }
 
 

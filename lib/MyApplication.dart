@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget{
         body: new Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            MyCustomCard('Login',Icons.account_circle),
+            MyCustomCard('Contacts',Icons.account_circle),
             MyCustomCard('call end',Icons.call_end,myColor: Colors.red),
             MyCustomCard('call',Icons.call,myColor:Colors.green),
 
