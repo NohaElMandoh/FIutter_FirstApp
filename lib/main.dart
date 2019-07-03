@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'MyApplication.dart';
 import 'statful_app.dart';
 import 'dev_info.dart';
+import 'scaffold_pract.dart';
 //void main() {
 //  runApp (new Center(
 //    child:new Text('اهلا وسهلا',
@@ -12,7 +13,7 @@ import 'dev_info.dart';
 void main() {
 
   runApp(new MaterialApp(
-    home:  new devInfo(),
+    home:  new scafPract(),
   ));
 }
 
