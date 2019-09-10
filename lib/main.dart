@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:path/path.dart';
 import 'MyApplication.dart';
+import 'flutter_CRUD.dart';
+import 'homepage.dart';
+import 'login.dart';
 import 'statful_app.dart';
 import 'dev_info.dart';
 import 'scaffold_pract.dart';//scafPract
@@ -14,9 +18,28 @@ import 'forsa_screen1.dart';
 //}
 void main() {
 
-  runApp(new MaterialApp(
-    home:  new forsa(),
-  ));
+  runApp(MyApp());
+}
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new MaterialApp(
+      routes: {
+        '/':(context)=>LoginPage(),
+        '/devInfo':(context)=>devInfo(),
+        '/forsa':(context)=>forsa(),
+        '/inputControllers':(context)=>inputControllers(),
+        '/My_Application':(context)=>My_App(),
+        '/scafPract':(context)=>scafPract(),
+        '/stfapp':(context)=>stfapp(),
+        '/F_CRUD':(context)=>F_CRUD(),
+//        '/login':(context)=>LoginPage()
+
+      },
+      //new forsa()
+
+    );
+  }
 }
 
 

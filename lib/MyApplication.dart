@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class MyApp extends StatelessWidget{
+class My_App extends StatelessWidget{
 
   Widget build (BuildContext context){
     return new  MaterialApp(
@@ -17,7 +17,6 @@ class MyApp extends StatelessWidget{
             MyCustomCard('Contacts',Icons.account_circle),
             MyCustomCard('call end',Icons.call_end,myColor: Colors.red),
             MyCustomCard('call',Icons.call,myColor:Colors.green),
-
           ],
         ),
       ),

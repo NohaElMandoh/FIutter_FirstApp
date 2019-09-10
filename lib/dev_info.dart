@@ -24,12 +24,12 @@ class _devInfoState extends State<devInfo> {
       body: new Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-        Center(
-          child: new RaisedButton(onPressed: getDeviceInfo,
-          child: new Text("Get Device Info"),),
-        ),
-        new Text(info)
-      ],),
+          Center(
+            child: new RaisedButton(onPressed: getDeviceInfo,
+              child: new Text("Get Device Info"),),
+          ),
+          new Text(info)
+        ],),
     );
   }
 }

@@ -8,7 +8,7 @@ class forsa extends StatefulWidget {
 class _forsaState extends State<forsa> {
   int photoindex = 0;
   List<String> photos = [
-//    'assets/1.jpg',
+    'assets/1.jpg',
     'assets/2.jpg',
     'assets/3.jpg',
   ];
@@ -30,8 +30,18 @@ class _forsaState extends State<forsa> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color(0xffF3661F),
-        leading: Icon(Icons.arrow_back),
-        title: Text("عقارات"),
+//        leading: Icon(Icons.arrow_back),
+        title: Text("slider"),
+
+
+
+
+
+
+
+
+
+
         centerTitle: true,
         actions: <Widget>[Icon(Icons.favorite)],
       ),
@@ -78,3 +88,10 @@ class _forsaState extends State<forsa> {
     );
   }
 }
+
+
+
+
+
+
+
