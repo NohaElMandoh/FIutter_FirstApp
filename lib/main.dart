@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:path/path.dart';
 import 'MyApplication.dart';
-import 'flutter_CRUD.dart';
+import 'access_camera.dart';
 import 'homepage.dart';
 import 'login.dart';
 import 'statful_app.dart';
@@ -25,15 +25,15 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new MaterialApp(
       routes: {
-        '/':(context)=>LoginPage(),
+        '/':(context)=>HomePage(),
         '/devInfo':(context)=>devInfo(),
         '/forsa':(context)=>forsa(),
         '/inputControllers':(context)=>inputControllers(),
         '/My_Application':(context)=>My_App(),
         '/scafPract':(context)=>scafPract(),
         '/stfapp':(context)=>stfapp(),
-        '/F_CRUD':(context)=>F_CRUD(),
-//        '/login':(context)=>LoginPage()
+        '/access_Camera':(context)=>access_Camera(),
+        '/login':(context)=>LoginPage()
 
       },
       //new forsa()

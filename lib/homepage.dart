@@ -14,6 +14,22 @@ class HomePage extends StatelessWidget {
             ListTile(
               onTap: () {
                 Navigator.pop(context);
+                Navigator.of(context).pushNamed('/login');
+              },
+              title: Text("Login with api"),
+            ), //end tile
+            Divider(),
+            ListTile(
+              onTap: () {
+                Navigator.pop(context);
+                Navigator.of(context).pushNamed('/access_Camera');
+              },
+              title: Text("Access Camera"),
+            ), //end tile
+            Divider(),
+            ListTile(
+              onTap: () {
+                Navigator.pop(context);
                 Navigator.of(context).pushNamed('/devInfo');
               },
               title: Text("Device Info"),
@@ -60,14 +76,7 @@ class HomePage extends StatelessWidget {
             ), //end tile
             Divider(),
           //
-            ListTile(
-              onTap: () {
-                Navigator.pop(context);
-                Navigator.of(context).pushNamed('/F_CRUD');
-              },
-              title: Text("Flutter CRUD"),
-            ), //end tile
-            Divider(),
+
           ],
         ),
       ),

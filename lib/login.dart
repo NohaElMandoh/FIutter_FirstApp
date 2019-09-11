@@ -6,6 +6,7 @@ import 'package:http/http.dart' as http;
 import 'package:firstapp/main.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import 'dev_info.dart';
 import 'homepage.dart';
 import 'models/login_model.dart';
 
@@ -60,7 +61,7 @@ class _LoginPageState extends State<LoginPage> {
           _isLoading = true;
         });
 //        sharedPreferences.setString("token", jsonResponse['token']);
-        Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (BuildContext context) => HomePage()), (Route<dynamic> route) => false);
+        Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (BuildContext context) => devInfo()), (Route<dynamic> route) => false);
       }
 //    }
     else {
@@ -134,7 +135,7 @@ class _LoginPageState extends State<LoginPage> {
     return Container(
       margin: EdgeInsets.only(top: 50.0),
       padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 30.0),
-      child: Text("Code Land",
+      child: Text("Login With Api",
           style: TextStyle(
               color: Colors.white70,
               fontSize: 40.0,
